@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('hello')
   getHello(): string {
     return this.appService.getHello();
   }
@@ -13,5 +13,15 @@ export class AppController {
   @Render('index.html')
   getHello2(): {} {
     return this.appService.getHello2();
+  }
+  @Get()
+  @Render('index.html')
+  getHome(): {} {
+    return this.appService.getHome();
+   }
+  @Get('about-us')
+  @Render('index.html')
+  getAboutUs(): {} {
+    return this.appService.getAboutUs();
    }
 }

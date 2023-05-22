@@ -6,10 +6,12 @@ export class AppService {
     return 'Hello World!';
   }
   getHello2(): {} {
-    return {message:'Hello World!',title:"My Greeting App"};
-   }
-   getHome():{}
-   {
-    return {title: 'HomePage'}
-   }
+    return { message: 'Hello World!', title: 'My Greeting App' };
+  }
+  getHome(): {} {
+    return { title: 'HomePage' }
+  }
+  getAboutUs(): {} {
+    return {title: 'About Us Page'}
+  }
 }
