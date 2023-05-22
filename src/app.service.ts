@@ -8,4 +8,8 @@ export class AppService {
   getHello2(): {} {
     return {message:'Hello World!',title:"My Greeting App"};
    }
+   getHome():{}
+   {
+    return {title: 'HomePage'}
+   }
 }
