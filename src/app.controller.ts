@@ -15,12 +15,12 @@ export class AppController {
     return this.appService.getHello2();
   }
   @Get()
-  @Render('index.html')
+  @Render('home.html')
   getHome(): {} {
     return this.appService.getHome();
    }
   @Get('about-us')
-  @Render('index.html')
+  @Render('aboutus.html')
   getAboutUs(): {} {
     return this.appService.getAboutUs();
    }
