@@ -20,7 +20,7 @@ export class AppController {
     return this.appService.getHome();
    }
   @Get('about-us')
-  @Render('aboutus.html')
+  @Render('about-us.html')
   getAboutUs(): {} {
     return this.appService.getAboutUs();
    }

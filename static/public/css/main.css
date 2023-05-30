@@ -1,3 +1,12 @@
+.navigation-bar a {
+    color: white; /* force color for links to be white and not whatever the default may be*/
+    text-decoration: none; /* ensures that there is no underline*/
+}
+.navigation-bar .active{
+    color: yellow; /* when the link is active, use yellow instead of white */
+    text-decoration: none;
+    font-weight: bold;
+}
 .navigation-bar  div {
     padding: 10px 15px 10px 20px;
 }
@@ -24,7 +33,7 @@
 
 .content-with-background-image{
     
-    background-image: url(/img/image4.jpg);
+    background-image: url(/public/img/image4.jpg);
     background-attachment: fixed;
     background-size: auto 1200px;
     background-repeat: no-repeat;
@@ -40,7 +49,7 @@
 
 .content-with-background-image2{
     
-    background-image: url(/img/image1.jpg);
+    background-image: url(/public/img/image1.jpg);
     background-attachment: scroll;
     background-size: auto 1200px;
     background-repeat: no-repeat;
@@ -136,3 +145,56 @@ html{
 .navigation-bar-right:hover{
     font-size: 2em;
 }
+
+.form-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    width: 40%;
+    padding: 20px;
+}
+.form-grid input, .form-grid label, .form-grid legend, .form-grid a{
+    font-size: 1.2em;
+}
+.form-grid label{
+    text-align: right;
+}
+.form-grid .button{
+    height: 2em;
+    width: 60%;
+}
+.signup-title{
+    background-color: #eee;
+    padding: 10px;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.warning{
+    color: orange;
+}
+
+.page-not-found-alert{
+    color: darkgray;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.admin{
+    padding: 20px;
+}
+
+.confirmation-box{
+    text-align: center;
+    width:auto;
+}
+
+.container {
+    border:0;
+}
+
